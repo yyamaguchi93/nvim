@@ -58,6 +58,40 @@ Replace surrounding: `sr` (example: `sr"'` = change quotes to single quotes)
 Find surrounding: `sf` / `sF`
 Highlight surrounding: `sh`
 
+## CopilotChat (AI Assistance)
+Toggle chat: `<space>cc`
+Quick chat: `<space>cq`
+Explain code: `<space>ce` (normal/visual)
+Review code: `<space>cr` (normal/visual)
+Fix code: `<space>cf` (normal/visual)
+Optimize code: `<space>co` (normal/visual)
+Generate docs: `<space>cd` (normal/visual)
+Generate tests: `<space>ct` (normal/visual)
+Fix diagnostic: `<space>cD`
+Commit message: `<space>cm`
+Commit staged: `<space>cM`
+Inline chat: `<space>ci` (visual mode)
+Help actions: `<space>ch`
+Prompt actions: `<space>cp` (normal/visual)
+
+## Copilot Suggestions
+Accept suggestion: `Tab`
+Next suggestion: `Ctrl-n`
+Previous suggestion: `Ctrl-p`
+Dismiss suggestion: `Ctrl-d`
+Open panel: `Alt-Enter`
+
+## Difi (Inline Diff Review)
+Toggle diff vs HEAD: `<space>df`
+Diff vs main: `:Difi main`
+Diff vs previous commit: `:Difi HEAD~1`
+Accept addition: leave green `+` line
+Reject addition: `dd` on green line
+Confirm deletion: leave red `-` line
+Restore deletion: delete the `-` marker
+Finalize edits: `:Difi` again
+Health check: `:DifiHealth`
+
 ## Memory Tips
 - **Visual + action** (select first, then format/replace)
 - **`s` = Surround operations** (sa/sd/sr for add/delete/replace)

@@ -7,20 +7,17 @@
 -- 	end
 -- }
 
-return { -- You can easily change to a different colorscheme.
-    -- Change the name of the colorscheme plugin below, and then
-    -- change the command in the config to whatever the name of that colorscheme is.
-    --
-    -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-    'folke/tokyonight.nvim',
-    priority = 1000, -- Make sure to load this before all the other start plugins.
+return {
+    'junegunn/seoul256.vim',
+    priority = 1000,
     init = function()
-      -- Load the colorscheme here.
-      -- Like many other themes, this one has different styles, and you could load
-      -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'tokyonight-night'
-
-      -- You can configure highlights by doing something like:
+      -- dark: 233 (darkest) ~ 239 (lightest), light: 252 (darkest) ~ 256 (lightest)
+      vim.g.seoul256_background = 233
+      vim.g.seoul256_light_background = 252
+      vim.cmd.colorscheme 'seoul256-light'
       vim.cmd.hi 'Comment gui=none'
+      -- Dark cursor for visibility on light background
+      vim.cmd.hi 'Cursor guifg=#d9d7d5 guibg=#424242'
+      vim.cmd.hi 'CursorLine guibg=#cccac8'
     end
   }

@@ -1,6 +1,6 @@
 return {
   'CopilotC-Nvim/CopilotChat.nvim',
-  branch = 'canary',
+  branch = 'main', -- Updated from 'canary' to 'main'
   dependencies = {
     { 'zbirenbaum/copilot.lua' }, -- or github/copilot.vim
     { 'nvim-lua/plenary.nvim' }, -- for curl, log wrapper
@@ -16,8 +16,8 @@ return {
       proxy = nil, -- [protocol://]host[:port] Use this proxy
       allow_insecure = false, -- Allow insecure server connections
 
-      model = 'gpt-4', -- GPT model to use, 'gpt-3.5-turbo' or 'gpt-4'
-      temperature = 0.1, -- GPT temperature
+      -- model = 'gpt-4', -- GPT model to use, 'gpt-3.5-turbo' or 'gpt-4'
+      -- temperature = 0.1, -- GPT temperature
 
       question_header = '## User ', -- Header to use for user questions
       answer_header = '## Copilot ', -- Header to use for AI answers
